@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Exercise</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2>Dogs</h2>
+          <button id="get-dog-image" class="btn btn-primary mt-2 mb-5">Get dog image</button>
+          <div id="dog-image"></div>
+
+          <h2>Weather Service</h2>
+
+          <form id="weather-form">
+            <div class="form-group">
+              Want weather?
+              <input
+                class="form-control"
+                type="text"
+                name="zipcode"
+                id="zipcode-field"
+                placeholder="zipcode"
+              />
+            </div>
+            <div class="form-group">
+              <button id="weather-button" class="btn btn-primary mt-2" type="button">Get It</button>
+            </div>
+          </form>
+
+          <div id="weather-info"></div>
+          <br />
+          <h2>Order Cookies</h2>
+
+          <form id="order-form">
+            <div class="form-group">
+              <label
+                >Quantity
+                <input class="form-control" type="number" name="qty" id="qty-field" />
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label
+                >Cookie Type
+                <select id="cookie-type-field" name="cookie-type" class="form-control">
+                  <option>Chocolate Chip</option>
+                  <option>Snickerdoodle</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="order-form-button" class="btn btn-primary mt-2">
+                Order
+              </button>
+            </div>
+          </form>
+
+          <div id="order-status"></div>
+        </div>
+        <div class="col-6">
+          <h2>Search iTunes</h2>
+          <form id="itunes-search-form">
+            <div class="form-group">
+              <label
+                >Search Term
+                <input class="form-control" id="search-term" />
+              </label>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="itunes-search-button" class="btn btn-primary mt-2">
+                Search
+              </button>
+            </div>
+          </form>
+
+          <ul id="itunes-results"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/ajax-exercise.js"></script>
+  </body>
+</html>

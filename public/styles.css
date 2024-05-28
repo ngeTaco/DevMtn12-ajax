@@ -1,0 +1,13 @@
+#zipcode-field {
+    width: 200px;
+}
+
+#dog-image img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.order-error {
+    /* use this if an ERROR code was returned */
+    color: red;
+}
